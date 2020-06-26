@@ -6,29 +6,39 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   background-color: cadetblue;
 } 
 
 .machineContainer {
   position: relative;
-  margin: 24px auto 0;
+  margin: 24px auto 0 auto;
+  padding-top: 72.72%;
+  width: 50%;
 }
 
 .washingMachine {
-  width: 400px;
-  height: 550px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   border-radius: 8px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left:50%;
+  transform: translateX(-50%);
 }
+
+.washingMachineLayer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
 
 /* Top Controls */
 .top-controlPanel {
   width: 100%;
-  height: 100px;
+  height: 18.18%;
   display: flex;
 }
 
@@ -45,23 +55,22 @@ body {
 }
 
 .detergentTrayContainer {
-  height: 80px;
-  width: 113px;
+  height: 80%;
+  width: 80%;
   border: 2px solid #ccc;
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 30px;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 30%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
 .detergentTray {
-  border: 2px solid #ccc;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  width: 80px;
-  height: 20px;
-  margin-bottom: 12px;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  width: 70%;
+  height: 30%;
+  margin-bottom: 12%;
   background-color: #ccc;
 }
 
@@ -73,21 +82,21 @@ body {
 .dial {
   border: 2px solid #ccc;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 6vw;
+  height: 6vw;
 }
 
 .display {
-  width: 100px;
-  height: 50px;
+  width: 74%;
+  height: 50%;
   background-color: #ccc;
   position: relative;
 }
 
 .led {
   position: absolute;
-  width: 30px;
-  height: 20px;
+  width: 30%;
+  height: 40%;
   background-color: green;
   left: 50%;
 }
@@ -96,14 +105,14 @@ body {
 /* Door */
 .mid-door {
   width: 100%;
-  height: 350px;
+  height: 63.64%;
 }
 
 .roundDoor {
   position: relative;
   border: 10px solid #000;
-  width: 340px;
-  height: 340px;
+  width: 40vw;
+  height: 40vw;
   margin: 0 auto;
   border-radius: 50%;
   display: flex;
@@ -112,15 +121,15 @@ body {
 .glassDoor {
   border-radius: 50%;
   background-color: #ccc;
-  width: 220px;
-  height: 220px;
+  width: 26vw;
+  height: 26vw;
   margin:  auto;
 }
 
 .tumbleContainer {
   border-radius: 50%;
-  width: 220px;
-  height: 220px;
+  width: 26vw;
+  height: 26vw;
   overflow: hidden;
   animation: spin 5s linear infinite;
   position: relative;
@@ -129,8 +138,8 @@ body {
 .clothes1 {
   position: absolute;
   border-radius: 20%;
-  width: 100px;
-  height: 80px;
+  width: 16vw;
+  height: 10vw;
   background-color:  purple;
   transform: rotate(-30deg);
   transform: skew(-50deg)
@@ -140,8 +149,8 @@ body {
   position: absolute;
   top: 50%;
   border-radius: 20%;
-  width: 70px;
-  height: 140px;
+  width: 11vw;
+  height: 18vw;
   background-color:  yellow;
   transform: skew(40deg)
 }
@@ -160,7 +169,7 @@ body {
 /* Bottom Tray */
 .bottom-tray {
   width: 100%;
-  height: 100px;
+  height: 18.18%;
   display: flex;
   align-items: center;
 }
@@ -168,8 +177,8 @@ body {
 .trayDoor {
   position: relative;
   border: 2px solid #ccc;
-  width: 100px;
-  height: 70px;
+  width: 12vw;
+  height: 8vw;
   margin: 0 32px;
   border-radius: 5px;
 }
@@ -182,3 +191,7 @@ body {
   width: 24px;
   margin: 0 auto;
 }
+
+
+
+*/
