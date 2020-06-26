@@ -118,19 +118,32 @@ body {
 }
 
 .tumbleContainer {
-  border: 2px solid red;
   border-radius: 50%;
   width: 220px;
   height: 220px;
   overflow: hidden;
-  animation: spin 4s linear infinite;
+  animation: spin 5s linear infinite;
+  position: relative;
 }
 
-.clothes {
-  background-color:  purple;
+.clothes1 {
+  position: absolute;
   border-radius: 20%;
   width: 100px;
   height: 80px;
+  background-color:  purple;
+  transform: rotate(-30deg);
+  transform: skew(-50deg)
+}
+
+.clothes2 {
+  position: absolute;
+  top: 50%;
+  border-radius: 20%;
+  width: 70px;
+  height: 140px;
+  background-color:  yellow;
+  transform: skew(40deg)
 }
 
 @keyframes spin {
@@ -139,7 +152,7 @@ body {
   }
 
   100% {
-    transform: rotate(359deg)
+    transform: rotate(360deg)
   }
 }
 
