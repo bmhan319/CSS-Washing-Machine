@@ -123,8 +123,7 @@ body {
   width: 220px;
   height: 220px;
   overflow: hidden;
-  transform: rotate(360deg);
-  transition: transform 1s linear infinite;
+  animation: spin 4s linear infinite;
 }
 
 .clothes {
@@ -134,7 +133,15 @@ body {
   height: 80px;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg)
+  }
 
+  100% {
+    transform: rotate(359deg)
+  }
+}
 
 
 /* Bottom Tray */
